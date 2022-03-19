@@ -641,3 +641,11 @@ def contactus_view(request):
             send_mail(str(name)+' || '+str(email),message,settings.EMAIL_HOST_USER, settings.EMAIL_RECEIVING_USER, fail_silently = False)
             return render(request, 'school/contactussuccess.html')
     return render(request, 'school/contactus.html', {'form':sub})
+
+
+def gallary_view(request):
+    return render(request,'school/gallary.html')
+
+
+def prospectus_view(request):
+    return render(request, 'school/prospectus.html')

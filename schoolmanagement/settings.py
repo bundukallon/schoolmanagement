@@ -26,9 +26,9 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'k0ujs9pcw+7qohwas!o7_ept20$c@$)-b=qco8sgviy_f)((bc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["empirecomputertraining.herokuapp.com"]
 
 
 # Application definition
@@ -126,10 +126,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[
 STATIC_DIR,
-    os.path.join(BASE_DIR, 'schoolmanagement/static')
+    os.path.join(BASE_DIR, 'schoolmanagement/static/images')
  ]
 
-STATIC_ROOT=os.path.join(BASE_DIR, 'schoolmanagement/static')
+STATIC_ROOT=os.path.join(BASE_DIR, 'schoolmanagement/static/images')
 
 LOGIN_REDIRECT_URL='/afterlogin'
 
